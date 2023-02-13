@@ -7,11 +7,12 @@ public class Main
     
         System.out.print("n의 값:");
         int n = scn.nextInt();
-
-        int sum = 0;
-        for(int i=1; i<=n; i++){
-            sum += i;
+        
+        System.out.print("1부터 n까지의 정수 합 = ");
+        if(n%2==0){
+            System.out.println((1+n)*(n/2));
+        }else{
+            System.out.println((2+n)*(n/2)+1);
         }
-        System.out.println("1부터 " + n + "까지의 합은 " + sum + "입니다.");
 	}
 }
